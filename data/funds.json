@@ -1,0 +1,121 @@
+{
+  "config": {
+    "defaultBudget": 20,
+    "defaultStrategy": "dynamic",
+    "note": "defaultStrategy: equal|low_fee|scarce|dynamic"
+  },
+  "funds": [
+    {
+      "code": "270042",
+      "name": "广发纳斯达克100A(QDII)",
+      "type": "纳指100",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "纳指核心仓位"
+    },
+    {
+      "code": "040046",
+      "name": "华安纳斯达克100A(QDII)",
+      "type": "纳指100",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "纳指老牌产品"
+    },
+    {
+      "code": "160213",
+      "name": "国泰纳斯达克100(QDII)",
+      "type": "纳指100",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "LOF品种"
+    },
+    {
+      "code": "000834",
+      "name": "大成纳斯达克100(QDII)",
+      "type": "纳指100",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "纳指跟踪"
+    },
+    {
+      "code": "161125",
+      "name": "易方达标普500A(QDII-LOF)",
+      "type": "标普500",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "标普500，费率较低"
+    },
+    {
+      "code": "050025",
+      "name": "博时标普500ETF联接A(QDII)",
+      "type": "标普500",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.15,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "标普500联接"
+    },
+    {
+      "code": "001092",
+      "name": "广发纳斯达克生物科技A(QDII)",
+      "type": "纳指生物科技",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "生物科技赛道"
+    },
+    {
+      "code": "161127",
+      "name": "易方达标普信息科技A(QDII-LOF)",
+      "type": "标普科技",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "偏科技龙头"
+    },
+    {
+      "code": "161128",
+      "name": "易方达全球成长精选A(QDII)",
+      "type": "全球精选",
+      "shareClass": "A",
+      "feeRate": 1.2,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "全球成长股"
+    },
+    {
+      "code": "006861",
+      "name": "浦银安盛全球智能科技A(QDII)",
+      "type": "全球科技",
+      "shareClass": "A",
+      "feeRate": 1,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "status": "active",
+      "note": "全球智能科技"
+    }
+  ],
+  "_lastUpdated": "2025-05-27",
+  "_updateNote": "请根据实际情况更新dailyLimit和status"
+}

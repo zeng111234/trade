@@ -1,0 +1,79 @@
+name: QDII每日投资计划
+
+on:
+  # 每天早上7:00 (UTC) 触发，即北京时间 15:00
+  # 注意：GitHub Actions 用 UTC 时间
+  # 北京时间 07:00 = UTC 23:00 (前一天)
+  schedule:
+    - cron: '0 23 * * *'  # UTC 23:00 = 北京时间 07:00
+
+  # 允许手动触发（方便测试）
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '试运行（不发邮件）'
+        required: false
+        default: false
+        type: boolean
+      budget:
+        description: '自定义预算（留空则使用配置默认值）'
+        required: false
+        type: string
+      strategy:
+        description: '分配策略: equal|low_fee|scarce'
+        required: false
+        default: 'scarce'
+        type: choice
+        options:
+          - dynamic
+          - scarce
+          - low_fee
+          - equal
+
+jobs:
+  generate-plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装依赖
+        run: npm install
+
+      - name: 运行分配器
+        run: |
+          CMD="node index.js"
+
+          # 处理 dry_run 参数
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+
+          # 处理 budget 参数
+          if [ -n "${{ inputs.budget }}" ]; then
+            CMD="$CMD --budget ${{ inputs.budget }}"
+          fi
+
+          # 处理 strategy 参数
+          if [ -n "${{ inputs.strategy }}" ]; then
+            CMD="$CMD --strategy ${{ inputs.strategy }}"
+          fi
+
+          echo "Running: $CMD"
+          eval $CMD
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
