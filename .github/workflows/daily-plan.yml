@@ -1,22 +1,22 @@
-name: QDII每日投资计划
+name: QDII
 on:
   schedule:
     - cron: '0 23 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
-        description: '运行测试模式'
+        description: dry-run
         required: false
         default: false
         type: boolean
       budget:
-        description: '自定义预算'
+        description: budget
         required: false
         type: string
       strategy:
-        description: '分配策略'
+        description: strategy
         required: false
-        default: 'dynamic'
+        default: dynamic
         type: choice
         options:
           - dynamic
@@ -29,25 +29,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: install deps
-        run: npm install
-      - name: run allocator
-        run: |
+      - run: npm install
+      - run: |
           CMD="node index.js"
+          STRATEGY="${{ inputs.strategy }}"
+          if [ -z "$STRATEGY" ]; then STRATEGY="dynamic"; fi
+          CMD="$CMD --strategy $STRATEGY"
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             CMD="$CMD --dry-run"
           fi
           if [ -n "${{ inputs.budget }}" ]; then
             CMD="$CMD --budget ${{ inputs.budget }}"
-          fi
-          if [ -n "${{ inputs.strategy }}" ]; then
-            CMD="$CMD --strategy ${{ inputs.strategy }}"
           fi
           echo "Running: $CMD"
           eval $CMD
