@@ -1,0 +1,119 @@
+{
+  "records": [
+    {
+      "date": "2026/5/28",
+      "budget": 50,
+      "strategy": "智能动态策略(Top3)",
+      "totalAllocated": 50,
+      "allocations": [
+        {
+          "code": "040046",
+          "name": "华安纳斯达克100A(QDII)",
+          "score": 12.85,
+          "allocated": 10,
+          "reason": "低于MA10加3.1分，多头排列+2分",
+          "indicators": {
+            "drawdown": 0,
+            "maDeviation": 2.09,
+            "recent5Change": 2.24,
+            "volatility": 0.98
+          },
+          "followUp5dReturn": null,
+          "followUp10dReturn": null
+        },
+        {
+          "code": "160213",
+          "name": "国泰纳斯达克100(QDII)",
+          "score": 12.83,
+          "allocated": 30,
+          "reason": "低于MA10加3分，多头排列+2分",
+          "indicators": {
+            "drawdown": 0,
+            "maDeviation": 2.02,
+            "recent5Change": 2.14,
+            "volatility": 0.98
+          },
+          "followUp5dReturn": null,
+          "followUp10dReturn": null
+        },
+        {
+          "code": "270042",
+          "name": "广发纳斯达克100A(QDII)",
+          "score": 12.82,
+          "allocated": 10,
+          "reason": "低于MA10加3.1分，多头排列+2分",
+          "indicators": {
+            "drawdown": 0,
+            "maDeviation": 2.05,
+            "recent5Change": 2.21,
+            "volatility": 0.97
+          },
+          "followUp5dReturn": null,
+          "followUp10dReturn": null
+        }
+      ],
+      "allScores": [
+        {
+          "code": "270042",
+          "name": "广发纳斯达克100A(QDII)",
+          "score": 12.82,
+          "status": "active"
+        },
+        {
+          "code": "040046",
+          "name": "华安纳斯达克100A(QDII)",
+          "score": 12.85,
+          "status": "active"
+        },
+        {
+          "code": "160213",
+          "name": "国泰纳斯达克100(QDII)",
+          "score": 12.83,
+          "status": "active"
+        },
+        {
+          "code": "000834",
+          "name": "大成纳斯达克100(QDII)",
+          "score": 12.78,
+          "status": "active"
+        },
+        {
+          "code": "161125",
+          "name": "易方达标普500A(QDII-LOF)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "050025",
+          "name": "博时标普500ETF联接A(QDII)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "001092",
+          "name": "广发纳斯达克生物科技A(QDII)",
+          "score": 5.41,
+          "status": "active"
+        },
+        {
+          "code": "161127",
+          "name": "易方达标普信息科技A(QDII-LOF)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "161128",
+          "name": "易方达全球成长精选A(QDII)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "006861",
+          "name": "浦银安盛全球智能科技A(QDII)",
+          "score": 12.22,
+          "status": "active"
+        }
+      ]
+    }
+  ]
+}

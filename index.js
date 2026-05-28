@@ -1,6 +1,16 @@
 require("dotenv").config();
 var fs = require("fs");
 var path = require("path");
+var { execSync } = require("child_process");
+
+// 修复Windows终端中文乱码
+try {
+  if (process.platform === "win32") {
+    execSync("chcp 65001", { stdio: "ignore" });
+    process.stdout.setDefaultEncoding("utf8");
+    process.stderr.setDefaultEncoding("utf8");
+  }
+} catch(e) {}
 var alloc = require("./lib/allocator");
 var dyn = require("./lib/dynamic-strategy");
 var ai = require("./lib/ai-analyst");
@@ -58,13 +68,22 @@ async function main() {
   console.log("  " + funds.length + " funds, budget=" + budget + ", strategy=" + strategyKey);
   console.log("");
 
+  var minPurchase = config.minPurchase || 10;
+  var topN = config.topN || 3;
+
   console.log("[2/4] Allocating...");
   var result, textContent;
   if (strategy === "dynamic") {
-    result = await dyn.allocateDynamic(budget, funds);
+    result = await dyn.allocateDynamic(budget, funds, {
+      lookbackDays: 30,
+      topN: topN,
+      minPurchase: minPurchase,
+      budgetScale: config.budgetScale || null,
+      enableHistory: true
+    });
     textContent = dyn.formatDynamicResult(result);
   } else {
-    result = alloc.allocate(budget, funds, strategy);
+    result = alloc.allocate(budget, funds, strategy, minPurchase);
     textContent = alloc.formatResult(result);
   }
   console.log(textContent);

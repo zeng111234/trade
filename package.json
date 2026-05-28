@@ -5,13 +5,19 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node index.js --dry-run"
+    "start": "cmd /c \"chcp 65001 >nul & node index.js\"",
+    "test": "cmd /c \"chcp 65001 >nul & node index.js --dry-run\""
   },
-  "keywords": ["qdii", "fund", "allocator", "investment"],
+  "keywords": [
+    "qdii",
+    "fund",
+    "allocator",
+    "investment"
+  ],
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "iconv-lite": "^0.7.2",
     "nodemailer": "^6.9.8"
   }
 }
