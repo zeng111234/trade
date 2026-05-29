@@ -117,22 +117,27 @@
     },
     {
       "date": "2026/5/29",
-      "budget": 10,
+      "budget": 20,
       "strategy": "智能动态策略(Top3)",
-      "totalAllocated": 10,
+      "totalAllocated": 20,
       "allocations": [
         {
-          "code": "539001",
-          "name": "建信纳斯达克100A(QDII)",
-          "score": 5.8,
+          "code": "040046",
+          "name": "华安纳斯达克100A(QDII)",
+          "score": 10,
           "allocated": 10,
-          "reason": "近期新高扣0.1分，低于MA10加2.5分，多头排列+2分，费率0.8%扣0.8分，限大额，降权50%",
-          "indicators": {
-            "drawdown": -0.04,
-            "maDeviation": 1.69,
-            "recent5Change": 1.97,
-            "volatility": 0.95
-          },
+          "reason": "数据不足，使用基础评分",
+          "indicators": {},
+          "followUp5dReturn": null,
+          "followUp10dReturn": null
+        },
+        {
+          "code": "001092",
+          "name": "广发纳斯达克生物科技A(QDII)",
+          "score": 10,
+          "allocated": 10,
+          "reason": "数据不足，使用基础评分",
+          "indicators": {},
           "followUp5dReturn": null,
           "followUp10dReturn": null
         }
@@ -147,7 +152,7 @@
         {
           "code": "040046",
           "name": "华安纳斯达克100A(QDII)",
-          "score": 5.33,
+          "score": 10,
           "status": "active"
         },
         {
@@ -177,7 +182,7 @@
         {
           "code": "001092",
           "name": "广发纳斯达克生物科技A(QDII)",
-          "score": 3.7,
+          "score": 10,
           "status": "active"
         },
         {
@@ -201,7 +206,7 @@
         {
           "code": "539001",
           "name": "建信纳斯达克100A(QDII)",
-          "score": 5.8,
+          "score": 5.3,
           "status": "active"
         },
         {
@@ -213,7 +218,7 @@
         {
           "code": "096001",
           "name": "大成标普500A(QDII)",
-          "score": 5.41,
+          "score": 5.91,
           "status": "active"
         },
         {
