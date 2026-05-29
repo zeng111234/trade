@@ -122,16 +122,16 @@
       "totalAllocated": 10,
       "allocations": [
         {
-          "code": "096001",
-          "name": "大成标普500A(QDII)",
-          "score": 5.91,
+          "code": "539001",
+          "name": "建信纳斯达克100A(QDII)",
+          "score": 5.8,
           "allocated": 10,
-          "reason": "近期新高扣0.1分，低于MA10加1.7分，多头排列+2分，费率0.6%扣0.6分，限大额，降权50%",
+          "reason": "近期新高扣0.1分，低于MA10加2.5分，多头排列+2分，费率0.8%扣0.8分，限大额，降权50%",
           "indicators": {
-            "drawdown": -0.05,
-            "maDeviation": 1.16,
-            "recent5Change": 1.16,
-            "volatility": 0.6
+            "drawdown": -0.04,
+            "maDeviation": 1.69,
+            "recent5Change": 1.97,
+            "volatility": 0.95
           },
           "followUp5dReturn": null,
           "followUp10dReturn": null
@@ -201,7 +201,7 @@
         {
           "code": "539001",
           "name": "建信纳斯达克100A(QDII)",
-          "score": 5.3,
+          "score": 5.8,
           "status": "active"
         },
         {
@@ -213,7 +213,7 @@
         {
           "code": "096001",
           "name": "大成标普500A(QDII)",
-          "score": 5.91,
+          "score": 5.41,
           "status": "active"
         },
         {
