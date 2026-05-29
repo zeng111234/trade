@@ -15,6 +15,7 @@ var alloc = require("./lib/allocator");
 var dyn = require("./lib/dynamic-strategy");
 var ai = require("./lib/ai-analyst");
 var mail = require("./lib/mailer");
+var backtest = require("./lib/backtest");
 
 var FUNDS_FILE = path.join(__dirname, "data", "funds.json");
 var STRATEGY_MAP = {
@@ -33,16 +34,20 @@ function loadFunds() {
 
 function parseArgs() {
   var args = process.argv.slice(2);
-  var opts = { dryRun: false, strategy: null, budget: null };
+  var opts = { dryRun: false, strategy: null, budget: null, backtest: false, backtestDays: 60 };
   for (var i = 0; i < args.length; i++) {
     if (args[i] === "--dry-run") opts.dryRun = true;
     else if (args[i] === "--strategy") opts.strategy = args[++i];
     else if (args[i] === "--budget") opts.budget = parseFloat(args[++i]);
+    else if (args[i] === "--backtest") opts.backtest = true;
+    else if (args[i] === "--backtest-days") opts.backtestDays = parseInt(args[++i]) || 60;
     else if (args[i] === "--help") {
       console.log("QDII Fund Allocator");
-      console.log("  --dry-run         dry run mode");
-      console.log("  --strategy <s>    equal|low_fee|scarce|dynamic");
-      console.log("  --budget <n>      daily budget");
+      console.log("  --dry-run            dry run mode");
+      console.log("  --strategy <s>       equal|low_fee|scarce|dynamic");
+      console.log("  --budget <n>         daily budget");
+      console.log("  --backtest           run backtest mode");
+      console.log("  --backtest-days <n>  backtest period (default 60)");
       process.exit(0);
     }
   }
@@ -70,6 +75,20 @@ async function main() {
 
   var minPurchase = config.minPurchase || 10;
   var topN = config.topN || 3;
+
+  if (opts.backtest) {
+    console.log("[回测模式] 启动策略回测...");
+    console.log("");
+    await backtest.runBacktest(funds, {
+      lookbackDays: 30,
+      topN: topN,
+      minPurchase: minPurchase,
+      backtestDays: opts.backtestDays
+    });
+    console.log("");
+    console.log("回测完成!");
+    return;
+  }
 
   console.log("[2/4] Allocating...");
   var result, textContent;
