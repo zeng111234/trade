@@ -66,7 +66,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git pull --rebase origin main
             git commit -m "chore: update history $(date +%Y/%m/%d)"
+            git pull --rebase --autostash origin main
             git push
           fi
