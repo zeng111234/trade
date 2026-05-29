@@ -196,6 +196,30 @@
       "minPurchase": 10,
       "status": "active",
       "note": "美股消费龙头"
+    },
+    {
+      "code": "050030",
+      "name": "博时亚洲票息收益A(QDII)",
+      "type": "亚洲债券",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.15,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "亚洲债券低波动"
+    },
+    {
+      "code": "000614",
+      "name": "华安德国DAX30A(QDII)",
+      "type": "德国",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "欧洲制造业龙头"
     }
   ],
   "_lastUpdated": "2025-05-27",
