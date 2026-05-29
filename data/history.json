@@ -122,16 +122,16 @@
       "totalAllocated": 10,
       "allocations": [
         {
-          "code": "000834",
-          "name": "大成纳斯达克100(QDII)",
-          "score": 5.53,
+          "code": "096001",
+          "name": "大成标普500A(QDII)",
+          "score": 5.76,
           "allocated": 10,
-          "reason": "近期新高扣0.2分，低于MA10加2.5分，多头排列+2分，费率0.8%扣1.2分，限大额，降权50%",
+          "reason": "近期新高扣0.1分，低于MA10加1.7分，多头排列+2分，费率0.6%扣0.9分，限大额，降权50%",
           "indicators": {
-            "drawdown": -0.12,
-            "maDeviation": 1.69,
-            "recent5Change": 1.95,
-            "volatility": 0.95
+            "drawdown": -0.05,
+            "maDeviation": 1.16,
+            "recent5Change": 1.16,
+            "volatility": 0.6
           },
           "followUp5dReturn": null,
           "followUp10dReturn": null
@@ -141,7 +141,7 @@
         {
           "code": "270042",
           "name": "广发纳斯达克100A(QDII)",
-          "score": 3.63,
+          "score": 4.63,
           "status": "active"
         },
         {
@@ -195,7 +195,37 @@
         {
           "code": "006861",
           "name": "浦银安盛全球智能科技A(QDII)",
-          "score": 5.23,
+          "score": 4.23,
+          "status": "active"
+        },
+        {
+          "code": "539001",
+          "name": "建信纳斯达克100A(QDII)",
+          "score": 5.6,
+          "status": "active"
+        },
+        {
+          "code": "161130",
+          "name": "易方达纳斯达克100A(QDII-LOF)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "096001",
+          "name": "大成标普500A(QDII)",
+          "score": 5.76,
+          "status": "active"
+        },
+        {
+          "code": "000179",
+          "name": "广发美国房地产A(QDII)",
+          "score": 5.25,
+          "status": "active"
+        },
+        {
+          "code": "162415",
+          "name": "华宝标普美国品质A(QDII-LOF)",
+          "score": 5.12,
           "status": "active"
         }
       ]

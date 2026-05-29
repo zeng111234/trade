@@ -10,9 +10,8 @@
       "base": 20,
       "max": 100,
       "thresholds": [
-        { "minScore": 15, "budget": 100, "label": "极佳机会-重仓" },
-        { "minScore": 12, "budget": 50, "label": "较好机会-加仓" },
-        { "minScore": 10, "budget": 20, "label": "正常定投" },
+        { "minScore": 10, "budget": 50, "label": "正常机会-加仓" },
+        { "minScore": 7, "budget": 20, "label": "一般机会-定投" },
         { "minScore": 0, "budget": 10, "label": "弱信号-试探" }
       ]
     }
@@ -137,6 +136,66 @@
       "minPurchase": 10,
       "status": "active",
       "note": "全球智能科技"
+    },
+    {
+      "code": "539001",
+      "name": "建信纳斯达克100A(QDII)",
+      "type": "纳指100",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "纳指100补充品种"
+    },
+    {
+      "code": "161130",
+      "name": "易方达纳斯达克100A(QDII-LOF)",
+      "type": "纳指100",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "纳指100易方达产品"
+    },
+    {
+      "code": "096001",
+      "name": "大成标普500A(QDII)",
+      "type": "标普500",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.15,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "标普500低费率"
+    },
+    {
+      "code": "000179",
+      "name": "广发美国房地产A(QDII)",
+      "type": "美国REITs",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.2,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "美国房地产信托"
+    },
+    {
+      "code": "162415",
+      "name": "华宝标普美国品质A(QDII-LOF)",
+      "type": "美股消费",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "美股消费龙头"
     }
   ],
   "_lastUpdated": "2025-05-27",
