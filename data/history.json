@@ -117,27 +117,22 @@
     },
     {
       "date": "2026/5/29",
-      "budget": 20,
+      "budget": 10,
       "strategy": "智能动态策略(Top3)",
-      "totalAllocated": 20,
+      "totalAllocated": 10,
       "allocations": [
         {
-          "code": "040046",
-          "name": "华安纳斯达克100A(QDII)",
-          "score": 10,
+          "code": "096001",
+          "name": "大成标普500A(QDII)",
+          "score": 5.91,
           "allocated": 10,
-          "reason": "数据不足，使用基础评分",
-          "indicators": {},
-          "followUp5dReturn": null,
-          "followUp10dReturn": null
-        },
-        {
-          "code": "001092",
-          "name": "广发纳斯达克生物科技A(QDII)",
-          "score": 10,
-          "allocated": 10,
-          "reason": "数据不足，使用基础评分",
-          "indicators": {},
+          "reason": "近期新高扣0.1分，低于MA10加1.7分，多头排列+2分，费率0.6%扣0.6分，限大额，降权50%",
+          "indicators": {
+            "drawdown": -0.05,
+            "maDeviation": 1.16,
+            "recent5Change": 1.16,
+            "volatility": 0.6
+          },
           "followUp5dReturn": null,
           "followUp10dReturn": null
         }
@@ -152,7 +147,7 @@
         {
           "code": "040046",
           "name": "华安纳斯达克100A(QDII)",
-          "score": 10,
+          "score": 5.33,
           "status": "active"
         },
         {
@@ -182,7 +177,7 @@
         {
           "code": "001092",
           "name": "广发纳斯达克生物科技A(QDII)",
-          "score": 10,
+          "score": 3.7,
           "status": "active"
         },
         {
@@ -251,19 +246,34 @@
       "date": "2026/5/30",
       "budget": 20,
       "strategy": "智能动态策略(Top3)",
-      "totalAllocated": 10.2,
+      "totalAllocated": 20,
       "allocations": [
         {
-          "code": "050025",
-          "name": "博时标普500ETF联接A(QDII)",
-          "score": 12.1,
-          "allocated": 10.2,
-          "reason": "低于MA10加1.8分，多头排列+2分，费率0.6%扣0.6分",
+          "code": "040046",
+          "name": "华安纳斯达克100A(QDII)",
+          "score": 8.72,
+          "allocated": 10,
+          "reason": "低于MA10加3.6分，多头排列+2分，费率0.8%扣0.8分，连续推荐1天扣1分，限大额，降权50%，限购10元稀缺+3分",
           "indicators": {
             "drawdown": 0,
-            "maDeviation": 1.18,
-            "recent5Change": 0.96,
-            "volatility": 0.6
+            "maDeviation": 2.39,
+            "recent5Change": 2.33,
+            "volatility": 0.96
+          },
+          "followUp5dReturn": null,
+          "followUp10dReturn": null
+        },
+        {
+          "code": "001092",
+          "name": "广发纳斯达克生物科技A(QDII)",
+          "score": 8.13,
+          "allocated": 10,
+          "reason": "低于MA10加2.8分，费率0.8%扣0.8分，限大额，降权50%，限购10元稀缺+3分",
+          "indicators": {
+            "drawdown": 0,
+            "maDeviation": 1.87,
+            "recent5Change": 1.37,
+            "volatility": 1.31
           },
           "followUp5dReturn": null,
           "followUp10dReturn": null
@@ -273,13 +283,13 @@
         {
           "code": "270042",
           "name": "广发纳斯达克100A(QDII)",
-          "score": 5.71,
+          "score": 8.71,
           "status": "active"
         },
         {
           "code": "040046",
           "name": "华安纳斯达克100A(QDII)",
-          "score": 5.22,
+          "score": 8.72,
           "status": "active"
         },
         {
@@ -291,7 +301,7 @@
         {
           "code": "000834",
           "name": "大成纳斯达克100(QDII)",
-          "score": 6.18,
+          "score": 7.68,
           "status": "active"
         },
         {
@@ -303,13 +313,13 @@
         {
           "code": "050025",
           "name": "博时标普500ETF联接A(QDII)",
-          "score": 12.1,
-          "status": "active"
+          "score": -999,
+          "status": "suspended"
         },
         {
           "code": "001092",
           "name": "广发纳斯达克生物科技A(QDII)",
-          "score": 4.63,
+          "score": 8.13,
           "status": "active"
         },
         {
@@ -345,7 +355,7 @@
         {
           "code": "096001",
           "name": "大成标普500A(QDII)",
-          "score": 6.28,
+          "score": 7.28,
           "status": "active"
         },
         {
@@ -371,6 +381,42 @@
           "name": "华安德国DAX30A(QDII)",
           "score": 4.47,
           "status": "active"
+        },
+        {
+          "code": "161126",
+          "name": "易方达标普医疗保健A(QDII-LOF)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "161129",
+          "name": "易方达标普消费品A(QDII-LOF)",
+          "score": -999,
+          "status": "suspended"
+        },
+        {
+          "code": "160421",
+          "name": "华安标普石油A(QDII-LOF)",
+          "score": 0.1,
+          "status": "active"
+        },
+        {
+          "code": "002400",
+          "name": "南方亚洲美元债A(QDII)",
+          "score": 4.68,
+          "status": "active"
+        },
+        {
+          "code": "160216",
+          "name": "国泰大宗商品(QDII-LOF)",
+          "score": 1.94,
+          "status": "active"
+        },
+        {
+          "code": "513050",
+          "name": "易方达中概互联ETF联接A(QDII)",
+          "score": -999,
+          "status": "suspended"
         }
       ]
     }

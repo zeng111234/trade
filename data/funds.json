@@ -220,6 +220,78 @@
       "minPurchase": 10,
       "status": "active",
       "note": "欧洲制造业龙头"
+    },
+    {
+      "code": "161126",
+      "name": "易方达标普医疗保健A(QDII-LOF)",
+      "type": "标普医疗",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "易方达医疗板块"
+    },
+    {
+      "code": "161129",
+      "name": "易方达标普消费品A(QDII-LOF)",
+      "type": "标普消费",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "易方达消费板块"
+    },
+    {
+      "code": "160421",
+      "name": "华安标普石油A(QDII-LOF)",
+      "type": "石油能源",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "石油能源板块"
+    },
+    {
+      "code": "002400",
+      "name": "南方亚洲美元债A(QDII)",
+      "type": "亚洲债",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.15,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "亚洲债券低波动"
+    },
+    {
+      "code": "160216",
+      "name": "国泰大宗商品(QDII-LOF)",
+      "type": "大宗商品",
+      "shareClass": "A",
+      "feeRate": 0.8,
+      "custodyFee": 0.25,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "大宗商品配置"
+    },
+    {
+      "code": "513050",
+      "name": "易方达中概互联ETF联接A(QDII)",
+      "type": "中概股",
+      "shareClass": "A",
+      "feeRate": 0.6,
+      "custodyFee": 0.15,
+      "dailyLimit": 100,
+      "minPurchase": 10,
+      "status": "active",
+      "note": "易方达中概互联"
     }
   ],
   "_lastUpdated": "2025-05-27",
