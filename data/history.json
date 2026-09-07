@@ -11888,7 +11888,7 @@
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": 0.18,
-          "followUp10dReturn": null
+          "followUp10dReturn": 0.59
         },
         {
           "rank": 2,
@@ -11899,7 +11899,7 @@
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": -1.92,
-          "followUp10dReturn": null
+          "followUp10dReturn": -1.5
         }
       ]
     },
@@ -12339,7 +12339,7 @@
           "suitabilityScore": 65.28,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": -0.72,
           "followUp10dReturn": null
         },
         {
@@ -12350,7 +12350,7 @@
           "suitabilityScore": 61.39,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": 0.42,
           "followUp10dReturn": null
         }
       ]
@@ -12812,14 +12812,13 @@
       "action": "PAUSE",
       "budget": 0,
       "pauseReasons": [
-        "ACCEPTANCE_GATE",
-        "PORTFOLIO_VALUATION_INCOMPLETE"
+        "ACCEPTANCE_GATE"
       ],
       "dataFreshness": {
-        "status": "PORTFOLIO_INCOMPLETE",
-        "latestNavDate": "2026-09-04",
+        "status": "FRESH",
+        "latestNavDate": "2026-09-07",
         "maxTradingDayLag": 1,
-        "observationCount": 34
+        "observationCount": 23
       },
       "signalHealth": {
         "status": "HEALTHY",
@@ -12830,8 +12829,8 @@
         },
         "shadow": {
           "count": 20,
-          "winRate": 45,
-          "averageReturn": -0.52
+          "winRate": 50,
+          "averageReturn": -0.49
         },
         "evidenceSource": "SHADOW",
         "breakerTriggered": false,
@@ -12864,7 +12863,7 @@
           "holdingDays": 126,
           "medianExcess12Week": -5.62,
           "drawdownGapPercentagePoints": -32.93,
-          "shadowWeeks": 4,
+          "shadowWeeks": 5,
           "hardRiskViolations": 0,
           "feesIncluded": true,
           "qdiiLagIncluded": true,
@@ -12894,15 +12893,23 @@
       "ranked": [
         {
           "rank": 1,
+          "code": "017641",
+          "name": "摩根标普500指数(QDII)A",
+          "score": 75.45,
+          "suitabilityScore": 75.45,
+          "proposedAmount": 0,
+          "blockedBy": [],
+          "followUp5dReturn": null,
+          "followUp10dReturn": null
+        },
+        {
+          "rank": 2,
           "code": "007280",
           "name": "摩根日本精选股票(QDII)A",
-          "score": 50,
-          "suitabilityScore": 20,
+          "score": 53.64,
+          "suitabilityScore": 53.64,
           "proposedAmount": 0,
-          "blockedBy": [
-            "FUND_WEIGHT_LIMIT",
-            "INDEX_GROUP_LIMIT"
-          ],
+          "blockedBy": [],
           "followUp5dReturn": null,
           "followUp10dReturn": null
         }
