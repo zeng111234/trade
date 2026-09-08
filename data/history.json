@@ -11470,7 +11470,7 @@
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": -0.55,
-          "followUp10dReturn": null
+          "followUp10dReturn": -0.13
         },
         {
           "rank": 2,
@@ -11481,7 +11481,7 @@
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": -0.91,
-          "followUp10dReturn": null
+          "followUp10dReturn": -0.76
         }
       ]
     },
@@ -11583,7 +11583,7 @@
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": -2.46,
-          "followUp10dReturn": null
+          "followUp10dReturn": -2.43
         },
         {
           "rank": 2,
@@ -11594,7 +11594,7 @@
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": -0.94,
-          "followUp10dReturn": null
+          "followUp10dReturn": 0.15
         }
       ]
     },
@@ -11920,7 +11920,7 @@
           "suitabilityScore": 63.86,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": 1.1,
           "followUp10dReturn": null
         },
         {
@@ -11931,7 +11931,7 @@
           "suitabilityScore": 63.18,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": 0.03,
           "followUp10dReturn": null
         }
       ]
@@ -12032,7 +12032,7 @@
           "suitabilityScore": 72.04,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": 0.63,
           "followUp10dReturn": null
         },
         {
@@ -12043,7 +12043,7 @@
           "suitabilityScore": 65.23,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": 0.67,
           "followUp10dReturn": null
         }
       ]
@@ -12144,7 +12144,7 @@
           "suitabilityScore": 75,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": -0.35,
           "followUp10dReturn": null
         },
         {
@@ -12155,7 +12155,7 @@
           "suitabilityScore": 55.91,
           "proposedAmount": 0,
           "blockedBy": [],
-          "followUp5dReturn": null,
+          "followUp5dReturn": -1.21,
           "followUp10dReturn": null
         }
       ]
@@ -12397,7 +12397,7 @@
       ],
       "dataFreshness": {
         "status": "FRESH",
-        "latestNavDate": "2026-09-07",
+        "latestNavDate": "2026-09-08",
         "maxTradingDayLag": 2,
         "observationCount": 23
       },
@@ -12411,7 +12411,7 @@
         "shadow": {
           "count": 20,
           "winRate": 50,
-          "averageReturn": -0.49
+          "averageReturn": -0.48
         },
         "evidenceSource": "SHADOW",
         "breakerTriggered": false,
@@ -12476,8 +12476,8 @@
           "rank": 1,
           "code": "017641",
           "name": "摩根标普500指数(QDII)A",
-          "score": 75.45,
-          "suitabilityScore": 75.45,
+          "score": 79.09,
+          "suitabilityScore": 79.09,
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": null,
@@ -12485,10 +12485,10 @@
         },
         {
           "rank": 2,
-          "code": "007280",
-          "name": "摩根日本精选股票(QDII)A",
-          "score": 53.64,
-          "suitabilityScore": 53.64,
+          "code": "000369",
+          "name": "广发全球医疗保健指数人民币(QDII)A",
+          "score": 45.45,
+          "suitabilityScore": 45.45,
           "proposedAmount": 0,
           "blockedBy": [],
           "followUp5dReturn": null,
